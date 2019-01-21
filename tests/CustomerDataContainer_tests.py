@@ -16,15 +16,11 @@ cdc.load_data('../csv/all_transactions.csv')
 # cdc.load_data('all_transactions_3columns.txt')
 # train validation split
 df_train, df_val = cdc.Train_Val_split(split_date_b,split_date_e)
-print(df_train.shape)
-print(df_train.head())
 # test computations of x
 cdc.compute_x()
 # test computation of tx and T
 cdc.compute_tx_T(split_date_e)
 # get the dataset back
 df = cdc.get_fit_df()
-print(df.shape)
-print(df.head())
 # save to csv
 cdc.save_to_csv(filename='../csv/test_out.csv')
