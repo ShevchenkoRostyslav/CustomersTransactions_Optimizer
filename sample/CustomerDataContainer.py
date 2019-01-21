@@ -19,7 +19,7 @@ class CustomerDataContainer:
         csv - path to the csv file or buffer (object with the read() method)
         """
         try:
-            self.df = pd.read_csv(csv)
+            self.df = pd.read_csv(csv,names=['ID','date'])
         except NameError:
             raise NameError("File not found.")
         except pd.errors.EmptyDataError:
@@ -30,8 +30,6 @@ class CustomerDataContainer:
             raise e
         # validate the input data
         self.__validate_data()
-        # name the df columns
-        self.df.columns = ['ID','date']
         # drop duplicates 
         self.__drop_duplicates()
 

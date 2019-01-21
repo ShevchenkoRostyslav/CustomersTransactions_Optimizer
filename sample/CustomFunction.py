@@ -258,7 +258,7 @@ class CustomFunction:
         filename - name of the output file (default: csv/estimated_parameters.csv)
         digits - number of digits to round the output (default: 2)
         """
-        with open('csv/estimated_parameters.csv','w') as file:
+        with open(filename,'w') as file:
             writer = csv.writer(file,delimiter=',',)
             writer.writerow(['r','alpha','a','b'])
             writer.writerow(self.getFitParameters(digits)) # rounded to 2 digits
