@@ -12,6 +12,8 @@ To <b>productionalize</b> the routine the project was also re-written in terms o
 * CustomerDataContainer (sample/CustomerDataContainer.py) is responsible for the handling of the input data, derivation of the required for the fit model features, train/validation splitting etc.
 * CustomFunction (sample/CustomFunction.py) is responsible for the implementation of the given objective function and its minimization.
 
+To run: python3 main.py --input_file='csv/all_transactions.csv' --split_date_b=19970101 --split_date_e=19971001
+
 A couple of <b>unit tests</b> for the CustomerDataContainer class are at tests/CustomerDataContainer_tests.py
 
 <h3>Possible improvements:</h3>
