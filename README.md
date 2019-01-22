@@ -9,7 +9,7 @@ Each of them is solved separately in a corresponding Jupyter Notebooks:
 * Task3and4.ipynb - Implementation of the CustomFunction class to compute and minimize a given objective function.
 
 To <b>productionalize</b> the routine the project was also re-written in terms of separate classes:
-* CustomerDataContainer (sample/CustomerDataContainer.py) is responsible for the handling of the input data, derivbation of the required for the fit model features, train/validation splitting etc.
+* CustomerDataContainer (sample/CustomerDataContainer.py) is responsible for the handling of the input data, derivation of the required for the fit model features, train/validation splitting etc.
 * CustomFunction (sample/CustomFunction.py) is responsible for the implementation of the given objective function and its minimization.
 
 A couple of <b>unit tests</b> for the CustomerDataContainer class are at tests/CustomerDataContainer_tests.py
